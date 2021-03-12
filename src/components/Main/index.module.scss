@@ -1,0 +1,15 @@
+.main {
+  padding: 32px;
+  margin: 0 auto;
+  height: calc(100% - 100px);
+  width: 100%;
+  background-color: beige;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 992px;
+  }
+}
