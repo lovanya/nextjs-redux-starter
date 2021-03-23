@@ -1,0 +1,59 @@
+/*
+ * 主题文件配置
+ */
+
+$primary-color: #009eef;
+$primary-color-dark: darken($primary-color, 5%);
+$secondary-color: #009688;
+
+$title-color: #000;
+$text-color: #222;
+$sub-text-color: #666;
+$white-text-color: #fff;
+$white-sub-text-color: fade($white-text-color, 50%);
+$white-color: #fff;
+
+$bg: #f9f9f9;
+
+$border-color: #e6e6e6;
+$border-color-dark: darken($border-color, 15%);
+
+$input-border-color: #ccc;
+$input-animate-border-color: darken($input-border-color, 15%);
+$input-disabled-border-color: #dcdee2;
+$input-disabled-bg: #f3f3f3;
+$input-disabled-color: #ccc;
+
+$toast-bg: rgba(0, 0, 0, 0.7);
+$toast-color: #fff;
+
+$btn-hover-opacity: 0.7;
+$btn-disabled-opacity: 0.35;
+$btn-disabled-color: #c5c8ce;
+$btn-disabled-bg: #f7f7f7;
+$btn-disabled-border-color: #dcdee2;
+$btn-transition: color 0.2s linear, background-color 0.2s linear, background-image 0.2s linear,
+  border 0.2s linear, box-shadow 0.2s linear, opacity 0.2s linear;
+
+$navbar-height: 56px; // 导航栏高度
+$navbar-bg: #f2f2f2;
+$navbar-height-phone: 44px; // 手机环境下导航栏高度
+
+$three-column-first-width: 240px; // 三栏组件：第一栏宽度
+$three-column-second-width: 320px; // 三栏组件：第二栏宽度
+$second-column-search-ct-height: 64px; // 三栏组件：第二栏搜索框容器高度
+$second-column-count-ct-height: 48px; // 三栏组件：第二栏计数项容器高度
+$second-column-list-item-hover-color: rgba(0, 0, 0, 0.03); // 三栏组件：第二栏列表 hover 色
+
+// slider
+$slider-bg: #e8eaec;
+$slider-color: $primary-color-dark;
+
+$menu-hover-color: transparentize($primary-color, 0.9); // 左栏菜单、顶栏备份菜单 hover 色
+
+// https://til.hashrocket.com/posts/sxbrscjuqu-share-scss-variables-with-javascript
+:export {
+  PrimaryColor: $primary-color;
+  SecondColumnSearchHeight: $second-column-search-ct-height;
+  SecondColumnCountHeight: $second-column-count-ct-height;
+}

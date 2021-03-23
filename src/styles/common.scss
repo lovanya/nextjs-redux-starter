@@ -1,0 +1,38 @@
+@import './mixins.scss';
+@import './theme.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  /*禁用长按选择文字功能*/
+  &:not(input):not(textare) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+html,
+body,
+#__next {
+  @include layout();
+}
+
+#__next {
+  font-family: SourceHanSansCN-Regular, Droidsansfallback, 'PingFang SC', 'Hiragino Sans GB',
+    Microsoft Yahei, '微软雅黑', HelveticaNeue, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $text-color;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.layout {
+}
