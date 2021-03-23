@@ -1,6 +1,6 @@
 /*
  * 组件级别css或者scss
- * Next.js allows you to import Sass using both the .scss and .sass extensions. 
+ * Next.js allows you to import Sass using both the .scss and .sass extensions.
  * You can use component-level Sass via CSS Modules and the .module.scss or .module.sass extension.
  * https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css
  */
@@ -9,4 +9,41 @@
   @include layout();
   padding-top: 64px;
   overflow: auto;
+  background-color: #efefef;
+}
+
+.logo {
+  @include centerY();
+  left: 16px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  color: red;
+
+  > img {
+    border-radius: 48px;
+    margin-right: 8px;
+  }
+}
+
+.menu {
+  display: inline-block;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 4px 12px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken(#0075d4, 5%);
+    }
+  }
 }

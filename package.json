@@ -63,9 +63,7 @@
     "prettier": "^2.2.1",
     "react-test-renderer": "^16.2.0",
     "redux-devtools-extension": "^2.13.9",
-    "rimraf": "^3.0.0",
-    "snazzy": "^8.0.0",
-    "standard": "^13.0.1"
+    "rimraf": "^3.0.0"
   },
   "pre-commit": "lint-staged",
   "lint-staged": {

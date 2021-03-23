@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 class MyApp extends App {
   render() {
     const { Component, pageProps, router, store } = this.props;
-    const title = 'Hello next.js Real World!';
+    const title = "Bruce's Blog";
     return (
       <Fragment>
         <Helmet>

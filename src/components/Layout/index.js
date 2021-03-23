@@ -12,14 +12,16 @@ export default class Layout extends PureComponent {
     return (
       <div className={styles.layout}>
         <Nav>
-          <img src="/static/images/next-logo.png" heigth="48" width="48" />
-          <h3>nextjs redux starter</h3>
-          <menu>
+          <div className={styles.logo}>
+            <img src="/static/images/next-logo.png" heigth="48" width="48" />
+            <span>道</span>
+          </div>
+          <menu className={styles.menu}>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
             <Link href="/about">
               <a>About</a>
-            </Link>
-            <Link href="/">
-              <a>Redux demo</a>
             </Link>
           </menu>
           <style jsx>{``}</style>

@@ -1,3 +1,13 @@
 /* eslint-disable react/display-name */
 
-export default props => <h1>About</h1>;
+export async function getStaticProps() {
+  return {
+    props: {
+      name: 'bruce'
+    }
+  };
+}
+
+export default function About({ name }) {
+  return <div>{name}</div>;
+}
