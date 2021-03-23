@@ -1,5 +1,5 @@
 import Immutable from 'immutable';
-import * as ActionType from 'actions/repos';
+import * as ActionType from '../actions/repos';
 
 export const initialState = Immutable.fromJS({
   isLoading: false,
