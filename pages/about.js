@@ -1,13 +1,15 @@
 /* eslint-disable react/display-name */
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  console.log(context);
   return {
     props: {
-      name: 'bruce'
-    }
+      name: 'shasha',
+      lang: 'javascript'
+    } // will be passed to the page component as props
   };
 }
 
 export default function About({ name }) {
-  return <div>{name}</div>;
+  return <div>About {name}</div>;
 }

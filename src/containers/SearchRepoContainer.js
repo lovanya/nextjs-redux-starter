@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 import { Map } from 'immutable';
 import { connect } from 'react-redux';
 
-import { getTopRepos } from 'actions/repos';
+import { getTopRepos } from 'store/actions/repos';
 import SearchResults from 'components/SearchResults';
 
 class SearchRepoContainer extends Component {
-  static async getInitialProps({ store, query }) {
-    // const lang = query.lang || "javascript";
-    // await store.dispatch(getTopRepos({ lang }));
-    return { lang: 'javascript' };
-  }
+  // static async getInitialProps({ store, query }) {
+  //   // 此处会运行服务端代码，用于处理页面的数据初始化或者路由判断
+  //   // const lang = query.lang || "javascript";
+  //   // await store.dispatch(getTopRepos({ lang }));
+  //   return { lang: 'javascript' };
+  // }
 
   componentDidMount() {
     const { getTopRepos } = this.props;
@@ -50,6 +51,7 @@ function mapStateToProps(state) {
 }
 
 SearchRepoContainer.propTypes = {
+  name: PropTypes.string,
   repos: PropTypes.instanceOf(Map).isRequired,
   getTopRepos: PropTypes.func.isRequired
 };

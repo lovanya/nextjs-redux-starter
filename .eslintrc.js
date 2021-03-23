@@ -45,7 +45,14 @@ module.exports = {
     curly: 'error', // if while 等条件控制语句后面必须有大括号
     'no-labels': [2, { allowLoop: false, allowSwitch: false }], // 禁止使用label语句，以避免无限循环
     'no-else-return': 2, // 如果if语句里面有return,后面不能跟else语句
-    'no-extra-parens': ['error', 'all', { ignoreJSX: 'all', nestedBinaryExpressions: false }], // 禁止非必要的括号
+    'no-extra-parens': [
+      'error',
+      'all',
+      {
+        ignoreJSX: 'all',
+        nestedBinaryExpressions: false
+      }
+    ], // 禁止非必要的括号
     radix: 2, // parseInt必须指定第二个参数
     'no-restricted-syntax': [
       // 自定义规则，不允许直接调用 setTimeout， setInterval， execScript
